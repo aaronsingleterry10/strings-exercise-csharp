@@ -22,11 +22,17 @@ namespace StringsExercise
             var input = Console.ReadLine();
             var array = input.Split('-');
             var numArray = Array.ConvertAll(array, int.Parse);
-            Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(numArray));
+            Console.WriteLine(Numbers.HasConsecutiveNums(numArray));
             //Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(list));
             //Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(list2));
             //Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(list3));
 
+            //2 - Write a program and ask the user to enter a few numbers separated 
+            //    by a hyphen. If the user simply presses Enter, without supplying an 
+            //    input, exit immediately; otherwise, check to see if there are duplicates. 
+            //    If so, display "Duplicate" on the console.
+
+            
         }
     }
 }
