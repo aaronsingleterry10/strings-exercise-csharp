@@ -18,36 +18,14 @@ namespace StringsExercise
             var list = new int[] { 1, 2, 3, 4, 5 };
             var list2 = new int[] { 1, 3, 5, 7, 9 };
             var list3 = new int[] { 12, 11, 10, 9, 8 };
-            Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(list));
-            Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(list2));
-            Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(list3));
-
-            //list3.Sort();
-            //bool isConsecutive = true;
-            //for (var i = 0; i < list3.Count(); i++)
-            //{
-            //    if (i == (list3.Count() - 1))
-            //    {
-            //        break;
-            //    }
-            //    else
-            //    {
-            //        if ((list3[i] + 1) != list3[i + 1])
-            //        {
-            //            Console.WriteLine("not consecutive");
-            //            isConsecutive = false;
-            //            break;
-            //        }
-            //        else
-            //        {
-            //            continue;
-            //        }
-            //    }
-            //}
-            //if (isConsecutive)
-            //{
-            //    Console.WriteLine("Consecutive");
-            //}
+            Console.Write("Enter a few numbers, separated by a hyphen. ");
+            var input = Console.ReadLine();
+            var array = input.Split('-');
+            var numArray = Array.ConvertAll(array, int.Parse);
+            Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(numArray));
+            //Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(list));
+            //Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(list2));
+            //Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(list3));
 
         }
     }
