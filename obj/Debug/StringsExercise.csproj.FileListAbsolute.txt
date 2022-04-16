@@ -1,0 +1,7 @@
+C:\Data\Projects\CSharpFundamentals\StringsExercise\bin\Debug\StringsExercise.exe.config
+C:\Data\Projects\CSharpFundamentals\StringsExercise\bin\Debug\StringsExercise.exe
+C:\Data\Projects\CSharpFundamentals\StringsExercise\bin\Debug\StringsExercise.pdb
+C:\Data\Projects\CSharpFundamentals\StringsExercise\obj\Debug\StringsExercise.csprojAssemblyReference.cache
+C:\Data\Projects\CSharpFundamentals\StringsExercise\obj\Debug\StringsExercise.csproj.CoreCompileInputs.cache
+C:\Data\Projects\CSharpFundamentals\StringsExercise\obj\Debug\StringsExercise.exe
+C:\Data\Projects\CSharpFundamentals\StringsExercise\obj\Debug\StringsExercise.pdb
