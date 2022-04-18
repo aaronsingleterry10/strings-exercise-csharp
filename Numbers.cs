@@ -24,5 +24,20 @@ namespace StringsExercise
             }
             return "Consecutive";
         }
+
+        public static string DuplicateNums(string nums)
+        {
+            var arrayUserInput = nums.Split('-');
+            var numArray = Array.ConvertAll(arrayUserInput, int.Parse);
+            Array.Sort(numArray);
+            for (var i = 0; i < numArray.Length - 1; i++)
+            {
+                if (numArray[i] == numArray[i + 1])
+                {
+                    return "Duplicate";
+                }
+            }
+            return "No Duplicates";
+        } 
     }
 }

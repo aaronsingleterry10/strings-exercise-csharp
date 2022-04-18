@@ -15,14 +15,14 @@ namespace StringsExercise
             //    For example, if the input is "5-6-7-8-9" or "20-19-18-17-16", 
             //    display a message: "Consecutive"; otherwise, display "Not Consecutive".
 
-            var list = new int[] { 1, 2, 3, 4, 5 };
-            var list2 = new int[] { 1, 3, 5, 7, 9 };
-            var list3 = new int[] { 12, 11, 10, 9, 8 };
-            Console.Write("Enter a few numbers, separated by a hyphen. ");
-            var input = Console.ReadLine();
-            var array = input.Split('-');
-            var numArray = Array.ConvertAll(array, int.Parse);
-            Console.WriteLine(Numbers.HasConsecutiveNums(numArray));
+            //var list = new int[] { 1, 2, 3, 4, 5 };
+            //var list2 = new int[] { 1, 3, 5, 7, 9 };
+            //var list3 = new int[] { 12, 11, 10, 9, 8 };
+            //Console.Write("Enter a few numbers, separated by a hyphen. ");
+            //var input = Console.ReadLine();
+            //var array = input.Split('-');
+            //var numArray = Array.ConvertAll(array, int.Parse);
+            //Console.WriteLine(Numbers.HasConsecutiveNums(numArray));
             //Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(list));
             //Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(list2));
             //Console.WriteLine(ConsecutiveNumbers.HasConsecutiveNums(list3));
@@ -31,8 +31,16 @@ namespace StringsExercise
             //    by a hyphen. If the user simply presses Enter, without supplying an 
             //    input, exit immediately; otherwise, check to see if there are duplicates. 
             //    If so, display "Duplicate" on the console.
-
-            
+            Console.Write("Enter in a few numbers separated by a hyphen: ");
+            var userInput = Console.ReadLine();
+            if (!String.IsNullOrWhiteSpace(userInput))
+            {
+                Console.WriteLine(Numbers.DuplicateNums(userInput));
+            }
+            //while (!String.IsNullOrWhiteSpace(userInput))
+            //{
+            //    Numbers.DuplicateNums(userInput);
+            //}
         }
     }
 }
